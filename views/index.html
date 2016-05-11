@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container-fluid">
+<div class="row">
+  <div class='map-outer col-md-8 col-sm-12'>
+    <div id='map-canvas'></div>
+  </div>
+  <div class='col-md-4 col-sm-12 right-col'>
+    <div class="row">
+      <div class="col-md-12 col-sm-6">
+        <div class="itinerary-add panel panel-info">
+          <div class="panel-heading"><h4>Add To Your Itinerary<h4></div>
+          <div class="panel-body">
+            <ul class="list-unstyled">
+              <h5>Hotels</h5>
+                  <select class="selectpicker" data-width='80%' data-dropupAuto="false">
+                    {% for hotel in hotels %}
+                      <option>{{hotel.name}}</option>
+                    {% endfor %}
+                  </select><button type="button" class="btn-select btn btn-primary btn-circle"><i class="glyphicon glyphicon-plus"></i></button>
+                <h5>Restaurants</h5>
+                  <select class="selectpicker" data-width='80%' data-dropupAuto="false">
+                    {% for restaurant in restaurants %}
+                      <option>{{restaurant.name}}</option>
+                    {% endfor %}
+                  </select><button type="button" class="btn-select btn btn-primary btn-circle"><i class="glyphicon glyphicon-plus"></i></button>
+                <h5>Activities</h5>
+                  <select class="selectpicker" data-width='80%' data-dropupAuto="false">
+                    {% for activity in activities %}
+                      <option>{{activity.name}}</option>
+                    {% endfor %}
+                  </select><button type="button" class="btn-select btn btn-primary btn-circle"><i class="glyphicon glyphicon-plus"></i></button>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 col-sm-6">
+        <div class="day"><h4>Day 1</h4></div>
+        <div class="itinerary panel panel-info">
+          <div class="panel-heading"><h4>Itinerary By Day</h4>
+            
+            <button type="button" class="btn btn-day btn-circle btn-primary">1</button>
+            <button type="button" class="btn btn-day btn-circle btn-primary">2</button>
+            <button type="button" class="btn btn-day btn-circle btn-primary">3</button>
+            <button type="button" class="btn btn-day btn-circle btn-primary">+</button>
+            
+          </div>
+          <div class="panel-body">
+            <ul class="list-unstyled">
+              <h5>Hotels</h5>
+              <div class="itinerary-item">{{hotels[1].name}}<button type="button" class="btn btn-danger btn-circle"><i class="glyphicon glyphicon-remove"></i></button></div>
+               <h5>Restaurants</h5>
+              <div class="itinerary-item">{{restaurants[3].name}}<button type="button" class="btn btn-danger btn-circle"><i class="glyphicon glyphicon-remove"></i></button></div>
+              <h5>Activities</h5>
+              <div class="itinerary-item">{{activities[5].name}}<button type="button" class="btn btn-danger btn-circle"><i class="glyphicon glyphicon-remove"></i></button></div>
+            </ul>
+         </div>     
+       </div>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+{% endblock %}

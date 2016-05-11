@@ -1,0 +1,97 @@
+body {
+  padding-top: 50px; }
+
+.navbar.navbar-fixed-top.navbar-inverse {
+  background-color: #D9EDF7;
+  border: 0;
+  position: fixed;
+  z-index: 1; }
+
+.navbar-inverse .navbar-brand {
+  color: #31708F; }
+
+.navbar-inverse .navbar-nav li a {
+  color: #31708F; }
+
+.right-col {
+  background-color: #E6E6E6;
+  height: 1000px; }
+
+.glyphicon-plus-sign {
+  margin: 5px;
+  color: blue; }
+
+.btn.dropdown-toggle.btn-default {
+  font-size: 12px; }
+
+.map-outer {
+  background-color: #E6E6E6;
+  padding-top: 20px; }
+
+#map-canvas {
+  height: 980px; }
+
+.btn-select {
+  margin-left: 3px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+  float: right; }
+
+.btn-danger.btn-circle {
+  margin-left: 3px;
+  width: 20px;
+  height: 20px;
+  padding: 3px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 10px;
+  float: right; }
+
+.btn-day {
+  color: #31708F;
+  background-color: #D9EDF7;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px; }
+
+.panel {
+  border-radius: 10px; }
+
+.itinerary-add {
+  margin-top: 20px; }
+
+span.text {
+  font-size: 12px; }
+
+.itinerary h4 {
+  display: inline-block;
+  margin-right: 10px; }
+
+.itinerary-item {
+  font-size: 12px; }
+
+.day {
+  margin: auto;
+  height: 40px;
+  width: 80px;
+  border: 2px solid #31708F;
+  color: #31708F;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: center; }
+
+.dropdown-menu.open, .dropdown-menu.inner {
+  z-index: 2; }
+
+@media (max-width: 768px) {
+  #map-canvas {
+    position: static; } }
